@@ -280,12 +280,12 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == REQUEST_RAW_PERMISSIONE) {
             ImageButton btSend = (ImageButton) findViewById(R.id.button_send);
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                setImageButtonEnabled(this, false, btSend, R.drawable.ic_send_24dp);
+                setImageButtonEnabled(this, true, btSend, R.drawable.ic_send_24dp);
             } else {
                 // TODO: user declined for RAW accessing permission.
                 // To pop up a description dialog or other prompts to explain app cannot work
                 // without permission.
-                setImageButtonEnabled(this, true, btSend, R.drawable.ic_send_24dp);
+                setImageButtonEnabled(this, false, btSend, R.drawable.ic_send_24dp);
             }
         }
     }
