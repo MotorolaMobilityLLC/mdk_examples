@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+	Copyright (c) 2017 Motorola Mobility, LLC.
+	All rights reserved.
+
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions are met:
+	1. Redistributions of source code must retain the above copyright notice,
+	this list of conditions and the following disclaimer.
+	2. Redistributions in binary form must reproduce the above copyright notice,
+	this list of conditions and the following disclaimer in the documentation
+	and/or other materials provided with the distribution.
+	3. Neither the name of the copyright holder nor the names of its
+	contributors may be used to endorse or promote products derived from this
+	software without specific prior written permission.
+
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+	AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+	THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+	PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+	CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+	EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+	PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+	OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+	WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+	OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+	ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.motorola.samples.mdkrawstub.MainActivity">
+
+    <TextView
+        android:id="@+id/mod_vid_pid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/no_mod"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        android:textAlignment="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:text="Output Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/output_text"
+        android:gravity="top"
+        android:saveEnabled="true"
+        android:lines="2"
+        android:maxLines="2"
+        android:textIsSelectable="true"
+        android:selectAllOnFocus="true"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:text="Input Text"
+        android:lines="2"
+        android:maxLines="2"
+        android:ems="10"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/input_text"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:selectAllOnFocus="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <Button
+        android:text="@string/write_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/write_button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClick"
+        style="@android:style/Widget.DeviceDefault.Button" />
+
+</LinearLayout>
