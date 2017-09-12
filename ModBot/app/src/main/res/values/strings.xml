@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ModBot</string>
+
+    <string name="no_mod">No Mod Attached</string>
+</resources>
